@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.user.calculator.MainActivity">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_weight="1">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/textQuery"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="8dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/textResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:ignore="InvalidId" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_weight="0.5">
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/buttonCLR"
+            style="c"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/holo_orange_dark"
+            android:text="CLR"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/buttonDivide"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/holo_blue_bright"
+            android:text="/"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            tools:ignore="InvalidId" />
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/buttonMux"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/holo_blue_bright"
+            android:text="X"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            tools:ignore="InvalidId" />
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/buttonMod"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/holo_blue_bright"
+            android:text="%"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+    </android.support.v7.widget.LinearLayoutCompat>
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_weight="0.5">
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/button7"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/darker_gray"
+            android:text="7"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/button8"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/darker_gray"
+            android:text="8"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            tools:ignore="InvalidId" />
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/button9"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/darker_gray"
+            android:text="9"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            tools:ignore="InvalidId" />
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/buttonPow"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/holo_blue_bright"
+            android:text="^"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+    </android.support.v7.widget.LinearLayoutCompat>
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_weight="0.5">
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/button4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/darker_gray"
+            android:text="4"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            tools:ignore="InvalidId" />
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/button5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/darker_gray"
+            android:text="5"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            tools:ignore="DuplicateIds" />
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/button6"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/darker_gray"
+            android:text="6"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/buttonSubtract"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/holo_blue_bright"
+            android:text="-"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+    </android.support.v7.widget.LinearLayoutCompat>
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_weight="0.5">
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/button1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/darker_gray"
+            android:text="1"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/button2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/darker_gray"
+            android:text="2"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/button3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/darker_gray"
+            android:text="3"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/buttonAdd"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/holo_blue_bright"
+            android:text="+"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+    </android.support.v7.widget.LinearLayoutCompat>
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_weight="0.5">
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/buttonDot"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/darker_gray"
+            android:text="."
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/button0"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/darker_gray"
+            android:text="0"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/buttonPrev"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/holo_orange_dark"
+            android:text="prev"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/buttonEquals"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/holo_blue_bright"
+            android:text="="
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+    </android.support.v7.widget.LinearLayoutCompat>
+
+</android.support.v7.widget.LinearLayoutCompat>
